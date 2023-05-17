@@ -1,0 +1,249 @@
+button {
+	width: 100%;
+	border-radius: 44px;
+	box-sizing: border-box;
+	line-height: 40px;
+	font-size: 14px;
+	font-weight: 500;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+	margin: 0px;
+	margin-top: 15px;
+	border: 0px;
+	width: 100%;
+	padding: 0px;
+	position: relative;
+	border: 2px solid #333333;
+	color: #ffffff;
+	text-transform: uppercase;
+	padding-left: 15px;
+	padding-right: 15px;
+	background: transparent;
+	color: #333333;
+}
+
+button.red {
+	border-color: #e95344;
+	color: #e95344;
+}
+
+button.green {
+	border-color: #2d9c63;
+	color: #2d9c63;
+}
+
+button.full.red {
+	border-color: #e95344;
+	background: #e95344;
+	color: #ffffff;
+}
+
+button.full.green {
+	border-color: #2d9c63;
+	background: #2d9c63;
+	color: #ffffff;
+}
+
+button.blue {
+	border-color: #1978b6;
+	color: #1978b6;
+}
+
+button.blue.full {
+	border-color: #1978b6;
+	background: #1978b6;
+	color: #ffffff;
+}
+
+button.yellow {
+	border-color: #ffcc00;
+	color: #ffcc00;
+}
+
+button.yellow.full {
+	border-color: #ffcc00;
+	background: #ffcc00;
+	color: #000000;
+}
+
+button.grey {
+	border-color: #c2c0c0;
+	color: #c2c0c0;
+}
+
+button.grey.text-red {
+	color: #ff2a00;
+}
+
+button.primary {
+	border-color: #2d9c63;
+	color: #2d9c63;
+}
+
+button.primary.full {
+	border-color: #2d9c63;
+	background-color: #2d9c63;
+	color: #ffffff;
+}
+
+body.driver button.primary {
+	border-color: #1978b6;
+	color: #1978b6;
+}
+
+body.driver button.primary.full {
+	border-color: #1978b6;
+	background-color: #1978b6;
+	color: #ffffff;
+}
+
+button.mini {
+	border-width: 1px;
+	font-size: 11px;
+	line-height: 22px;
+	min-width: 80px !important;
+}
+
+button.grey.t-primary-color {
+	color: #a9c200;
+}
+
+button.arrow,
+button.arrow-white,
+button.arrow-black {
+	background-position: center right;
+	background-repeat: no-repeat;
+	background-size: 38px 38px;
+}
+
+button.t-a-l {
+	text-align: left;
+	padding-left: 12px;
+}
+
+button .icon {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	width: 44px;
+	background-position: center right;
+	background-repeat: no-repeat;
+	background-size: 22px 22px;
+	width: 32px;
+    margin-top: 6px;
+    margin-left: 6px;
+}
+
+button .icon.mini {
+	width: 16px;
+	margin-top: 12px;
+    margin-left: 12px;
+}
+
+button.with-icon {
+	padding-left: 44px;
+}
+
+button.auto {
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 120px;
+}
+
+.clicked-effect {
+	-webkit-transform: scale(0.01);
+	-moz-transform: scale(0.01);
+	-ms-transform: scale(0.01);
+	transform: scale(0.01);
+    transform: scale(0.01);
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 100%;
+    background: #ffffff;
+    opacity: 0;
+    -webkit-animation: buttonclicked;
+    -moz-animation:    buttonclicked;
+    -ms-animation:     buttonclicked;
+    animation-name:    buttonclicked;
+	-webkit-animation-duration: 1000ms;
+	-moz-animation-duration: 1000ms;
+	-ms-animation-duration: 1000ms;
+    animation-duration: 1000ms;
+	-webkit-transition-duration: 1000ms;
+	-moz-transition-duration: 1000ms;
+	-ms-transition-duration: 1000ms;
+	transition-duration: 1000ms;
+}
+
+.list-item .clicked-effect {
+    background: rgba(0,0,0,0.3);
+}
+
+ul.list-button {
+    margin: 0px;
+    padding: 0px;
+    list-style-image: none;
+}
+
+ul.list-button li {
+	display: block;
+	padding-left: 20px;
+	line-height: 44px;
+	border-bottom: 1px solid #eee;
+	text-align: left;
+	position: relative;
+}
+
+ul.list-button li .icon {
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	width: 24px;
+	height: 24px;
+}
+
+ul.list-button li.icon-left .icon {
+	right: auto;
+	left: 15px;
+}
+
+ul.list-button li.icon-left {
+    background: url('../../../assets/icons/Arrow right.svg') calc(100% - 18px) center no-repeat;
+    background-size: 12px 12px;
+    padding-left: 50px;
+}
+
+button.pressed,
+li.pressed {
+	opacity: 0.5;
+}
+
+@keyframes buttonclicked {
+    0%   {
+        opacity: 0;
+		-webkit-transform: scale(0.01);
+		-moz-transform: scale(0.01);
+		-ms-transform: scale(0.01);
+        transform: scale(0.01);
+    }
+    1%   {
+        opacity: 0.5;
+		-webkit-transform: scale(0.2);
+		-moz-transform: scale(0.2);
+		-ms-transform: scale(0.2);
+        transform: scale(0.2);
+    }
+    100% {
+		-webkit-transform: scale(4);
+		-moz-transform: scale(4);
+		-ms-transform: scale(4);
+        transform: scale(4);
+        opacity: 0;
+    }
+}

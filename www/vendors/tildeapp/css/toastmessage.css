@@ -1,0 +1,39 @@
+toastmessage {
+	padding: 0px;
+	color: #fff;
+	min-height: 22px;
+	padding: 18px;
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	bottom: -140px;
+	background: #3EC378;
+	box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+	text-align: center;
+	font-weight: bold;
+	z-index: 1000;
+	-webkit-transition-duration: 400ms;
+	   -moz-transition-duration: 400ms;
+		-ms-transition-duration: 400ms;
+			transition-duration: 400ms;
+}
+
+toastmessage {
+	padding-bottom: calc(constant(safe-area-inset-bottom) + 14px);
+    padding-bottom: calc(env(safe-area-inset-bottom) + 14px);
+}
+
+toastmessage.show {
+	-webkit-transform: translateY(-140px);
+	   -moz-transform: translateY(-140px);
+   	    -ms-transform: translateY(-140px);
+			transform: translateY(-140px);
+}
+
+toastmessage.error {
+	background: #e95344;
+}
+
+toastmessage.warning {
+	background: #FFC107;
+}

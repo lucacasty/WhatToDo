@@ -1,0 +1,137 @@
+input, select, textarea {
+	/*border: 1px solid #eee;*/
+	border: 0px;
+	margin: 0px;
+	margin-top: 20px;
+	line-height: 32px;
+	margin-bottom: 10px;
+	font-size: 16px;
+	display: block;
+	background: transparent;
+	color: #555555;
+	padding: 0px;
+	width: 100%;
+	border-radius: 0px;
+	-webkit-appearance: none;
+	border-bottom: 1px solid #888;
+	box-sizing: border-box;
+	font-family: "Lato-Regular";
+}
+
+input[type='date'],
+input[type='time'] {
+	height: 33px;
+}
+
+input.disabled {
+	opacity: 0.2 !important;
+	pointer-events: none;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #888;
+    border-radius: 100%;
+    margin-right: 20px;
+    float: left;
+    margin: 0px;
+    margin-right: 11px;
+    margin-bottom: 10px;
+}
+
+input[type="range"] {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	-webkit-appearance: none;
+	appearance: none;
+	width: 100%;
+	height: 2px;
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.7;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+	touch-action: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none; /* Override default look */
+	appearance: none;
+	width: 20px; /* Set a specific slider handle width */
+	height: 20px; /* Slider handle height */
+	background: #2ba565; /* Green background */
+	cursor: pointer; /* Cursor on hover */
+	border-radius: 100%;
+}
+
+input[type='checkbox']:checked,
+input[type='radio']:checked {
+	background: #888;
+	box-shadow: inset 0px 0px 0px 3px #fff;
+}
+
+textarea {
+	width: 100%;
+	min-height: 80px;
+	line-height: 18px;
+}
+
+select {
+	width: 100%;
+}
+
+.form-line {
+	width: 100%;
+	min-height: 48px;
+	background: #fff;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+.form-line .form-label {
+	width: 60%;
+	float: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.form-line .form-label label {
+	padding-left: 10px;
+	line-height: 48px;
+}
+
+.form-line .form-input {
+	width: 39%;
+	float: right;
+	background: #f8f8f8;
+}
+
+.form-line .form-input input,
+.form-line .form-input select {
+	margin: 0px;
+	line-height: 44px;
+	min-height: 44px;
+	background: transparent;
+	text-align: right;
+	width: 90%;
+	margin-right: 5%;
+	margin-left: 5%;
+	color: #333;
+	font-size: 18px;
+}
+
+.field.with-label input,
+.field.with-label select,
+.field.with-label textarea {
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+
+.field.with-label label {
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: bold;
+}

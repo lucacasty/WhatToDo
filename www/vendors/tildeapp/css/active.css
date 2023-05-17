@@ -1,0 +1,11 @@
+button[action]:active,
+div[action]:active,
+p[action]:active,
+span[action]:active,
+li[action]:active,
+article[action]:active,
+tag[action]:active,
+description[action]:active,
+label[action]:active {
+	opacity: 0.5;
+}

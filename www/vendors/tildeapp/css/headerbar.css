@@ -1,0 +1,210 @@
+headerbar {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 44px;
+	background: rgba(255,255,255,1);
+	opacity: 0;
+	display: none;
+	overflow: hidden;
+	box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	-ms-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	z-index: 100;
+	opacity: 1;
+	transition-duration: 500ms;
+}
+
+headerbar.show {
+	opacity: 1;
+}
+
+headerbar .right {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+
+headerbar .left {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+
+headerbar .title {
+	font-family: 'Roboto-Regular', Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	position: absolute;
+	left: 30%;
+	right: 30%;
+	line-height: 44px;
+	bottom: 0px;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	-ms-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	opacity: 0;
+}
+
+headerbar .title.show {
+	opacity: 1;
+}
+
+headerbar .title.with-logo {
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+	color: transparent;
+	height: 36px;
+	bottom: 4px;
+}
+
+
+headerbar ul {
+	list-style-image: none;
+	margin: 0px;
+	padding: 0px;
+	max-width: 640px;
+	margin: 0px auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+headerbar li {
+	display: inline;
+	height: 44px;
+	position: relative;
+	cursor: pointer;
+	min-width: 44px;
+	line-height: 44px;
+	max-width: 155px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+headerbar .right li {
+	float: right;
+}
+
+headerbar .left li {
+	float: left;
+}
+
+headerbar li .text {
+	/*Header button text default color*/
+	font-family: 'Lato-Regular', Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	white-space: nowrap;
+	line-height: 44px;
+	margin-left: 8px;
+	margin-right: 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+headerbar li.with-icon .text {
+	margin-left: 36px;
+}
+
+headerbar .left li.with-icon.with-text .text {
+	margin-left: 30px;
+}
+
+headerbar .icon {
+	/*Toolbar icon default color*/
+	background-color: #007aff;
+	height: 44px;
+	width: 44px;
+	position: absolute;
+}
+
+headerbar .left .with-icon.with-text .icon {
+	/*width: 30px;*/
+}
+
+headerbar li {
+	text-align: center;
+}
+
+headerbar li .material-icons {
+	text-align: center;
+	line-height: 44px;
+}
+
+/*iOS7 adapter header*/
+
+headerbar {
+	height: calc(constant(safe-area-inset-top) + 44px);
+    height: calc(env(safe-area-inset-top) + 44px);
+}
+
+/*Android header*/
+
+.android headerbar .left {
+	display: none !important;
+}
+
+headerbar li[level] {
+	display: none;
+}
+
+view[level="0"] headerbar li[level="0"] { display: inline; }
+view[level="1"] headerbar li[level="1"] { display: inline; }
+view[level="2"] headerbar li[level="2"] { display: inline; }
+view[level="3"] headerbar li[level="3"] { display: inline; }
+view[level="4"] headerbar li[level="4"] { display: inline; }
+view[level="5"] headerbar li[level="5"] { display: inline; }
+view[level="6"] headerbar li[level="6"] { display: inline; }
+view[level="7"] headerbar li[level="7"] { display: inline; }
+view[level="8"] headerbar li[level="8"] { display: inline; }
+view[level="9"] headerbar li[level="9"] { display: inline; }
+view[level="10"] headerbar li[level="10"] { display: inline; }
+view[level="11"] headerbar li[level="11"] { display: inline; }
+view[level="12"] headerbar li[level="12"] { display: inline; }
+view[level="13"] headerbar li[level="13"] { display: inline; }
+view[level="14"] headerbar li[level="14"] { display: inline; }
+view[level="15"] headerbar li[level="15"] { display: inline; }
+view[level="16"] headerbar li[level="16"] { display: inline; }
+view[level="17"] headerbar li[level="17"] { display: inline; }
+view[level="18"] headerbar li[level="18"] { display: inline; }
+view[level="19"] headerbar li[level="19"] { display: inline; }
+view[level="20"] headerbar li[level="20"] { display: inline; }
+view[level="21"] headerbar li[level="21"] { display: inline; }
+view[level="22"] headerbar li[level="22"] { display: inline; }
+view[level="23"] headerbar li[level="23"] { display: inline; }
+view[level="24"] headerbar li[level="24"] { display: inline; }
+view[level="25"] headerbar li[level="25"] { display: inline; }
+view[level="26"] headerbar li[level="26"] { display: inline; }
+view[level="27"] headerbar li[level="27"] { display: inline; }
+view[level="28"] headerbar li[level="28"] { display: inline; }
+view[level="29"] headerbar li[level="29"] { display: inline; }
+view[level="30"] headerbar li[level="30"] { display: inline; }
+view[level="31"] headerbar li[level="31"] { display: inline; }
+view[level="32"] headerbar li[level="32"] { display: inline; }
+view[level="33"] headerbar li[level="33"] { display: inline; }
+view[level="34"] headerbar li[level="34"] { display: inline; }
+view[level="35"] headerbar li[level="35"] { display: inline; }
+view[level="36"] headerbar li[level="36"] { display: inline; }
+view[level="37"] headerbar li[level="37"] { display: inline; }
+view[level="38"] headerbar li[level="38"] { display: inline; }
+view[level="39"] headerbar li[level="39"] { display: inline; }
+view[level="40"] headerbar li[level="40"] { display: inline; }
+view[level="41"] headerbar li[level="41"] { display: inline; }
+view[level="42"] headerbar li[level="42"] { display: inline; }
+view[level="43"] headerbar li[level="43"] { display: inline; }
+view[level="44"] headerbar li[level="44"] { display: inline; }
+view[level="45"] headerbar li[level="45"] { display: inline; }
+view[level="46"] headerbar li[level="46"] { display: inline; }
+view[level="47"] headerbar li[level="47"] { display: inline; }
+view[level="48"] headerbar li[level="48"] { display: inline; }
+view[level="49"] headerbar li[level="49"] { display: inline; }
+view[level="50"] headerbar li[level="50"] { display: inline; }
