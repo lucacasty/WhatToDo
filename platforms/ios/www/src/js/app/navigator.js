@@ -52,10 +52,11 @@ var _navigator = {
     
     },
 
-    page2: function(callback) {
+    notes: function(callback) {
         _toolbar.show();
-        _views.page2.show();
-        _views.page2.section('page2');  
+        _views.notes.show();
+        _views.notes.section('notes');  
+        _notes.init();
     },
 
     page3: function(callback) {

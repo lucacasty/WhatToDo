@@ -49,9 +49,34 @@
 	<script type="text/javascript" src="src/js/event/custom.js"></script>
 	<script type="text/javascript" src="src/js/app/navigator.js"></script>
 	<script type="text/javascript" src="src/js/app/init.js"></script>
+	<script type="text/javascript" src="src/js/app/notes.js"></script>
 	<!--</Deject>-->
     <!--JS Library Cordova-->
     <script type="text/javascript" src="cordova.js"></script>
+
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+		import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics.js";
+		// TODO: Add SDKs for Firebase products that you want to use
+		// https://firebase.google.com/docs/web/setup#available-libraries
+	  
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		const firebaseConfig = {
+		  apiKey: "AIzaSyDyuny0VeLQ_EgA4yQ3WYiYVPBpg3H1GBc",
+		  authDomain: "whattodo-533d7.firebaseapp.com",
+		  projectId: "whattodo-533d7",
+		  storageBucket: "whattodo-533d7.appspot.com",
+		  messagingSenderId: "148463965223",
+		  appId: "1:148463965223:web:1ab00fad1c25645a61aa02",
+		  measurementId: "G-NJD9BPGNG0"
+		};
+	  
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const analytics = getAnalytics(app);
+	</script>
 
 </head>
 <body></body>

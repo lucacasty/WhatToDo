@@ -3,27 +3,27 @@
     "name": "Gruppo YU",
     "icons": [
       {
-        "src": "assets/img/logo.png",
+        "src": "assets/img/logo.jpg",
         "type": "image/png",
         "sizes": "114x114"
       },
       {
-        "src": "assets/img/logo.png",
+        "src": "assets/img/logo.jpg",
         "type": "image/png",
         "sizes": "144x144"
       },
       {
-        "src": "assets/img/logo.png",
+        "src": "assets/img/logo.jpg",
         "type": "image/png",
         "sizes": "192x192"
       },
       {
-        "src": "assets/img/logo.png",
+        "src": "assets/img/logo.jpg",
         "type": "image/png",
         "sizes": "256x256"
       },
       {
-        "src": "assets/img/logo.png",
+        "src": "assets/img/logo.jpg",
         "type": "image/png",
         "sizes": "512x512"
       }
