@@ -1,0 +1,224 @@
+/*
+view section {
+	pointer-events: auto;
+	-webkit-transform: translateX(0%) scale(1);
+	-moz-transform: translateX(0%) scale(1);
+	-ms-transform: translateX(0%) scale(1);
+	transform: scale(1);
+}
+
+view[level='1'] .level-0,
+view[level='2'] .level-0,
+view[level='2'] .level-1,
+view[level='3'] .level-0,
+view[level='3'] .level-1,
+view[level='3'] .level-2,
+view[level='4'] .level-0,
+view[level='4'] .level-1,
+view[level='4'] .level-2,
+view[level='4'] .level-3,
+view[level='5'] .level-0,
+view[level='5'] .level-1,
+view[level='5'] .level-2,
+view[level='5'] .level-3,
+view[level='5'] .level-4,
+view[level='6'] .level-0,
+view[level='6'] .level-1,
+view[level='6'] .level-2,
+view[level='6'] .level-3,
+view[level='6'] .level-4,
+view[level='6'] .level-5,
+view[level='7'] .level-0,
+view[level='7'] .level-1,
+view[level='7'] .level-2,
+view[level='7'] .level-3,
+view[level='7'] .level-4,
+view[level='7'] .level-5,
+view[level='7'] .level-6,
+view[level='8'] .level-0,
+view[level='8'] .level-1,
+view[level='8'] .level-2,
+view[level='8'] .level-3,
+view[level='8'] .level-4,
+view[level='8'] .level-5,
+view[level='8'] .level-6,
+view[level='8'] .level-7,
+view[level='9'] .level-0,
+view[level='9'] .level-1,
+view[level='9'] .level-2,
+view[level='9'] .level-3,
+view[level='9'] .level-4,
+view[level='9'] .level-5,
+view[level='9'] .level-6,
+view[level='9'] .level-7,
+view[level='9'] .level-8,
+view[level='10'] .level-0,
+view[level='10'] .level-1,
+view[level='10'] .level-2,
+view[level='10'] .level-3,
+view[level='10'] .level-4,
+view[level='10'] .level-5,
+view[level='10'] .level-6,
+view[level='10'] .level-7,
+view[level='10'] .level-8,
+view[level='10'] .level-9,
+view[level='11'] .level-0,
+view[level='11'] .level-1,
+view[level='11'] .level-2,
+view[level='11'] .level-3,
+view[level='11'] .level-4,
+view[level='11'] .level-5,
+view[level='11'] .level-6,
+view[level='11'] .level-7,
+view[level='11'] .level-8,
+view[level='11'] .level-9,
+view[level='11'] .level-10,
+view[level='12'] .level-0,
+view[level='12'] .level-1,
+view[level='12'] .level-2,
+view[level='12'] .level-3,
+view[level='12'] .level-4,
+view[level='12'] .level-5,
+view[level='12'] .level-6,
+view[level='12'] .level-7,
+view[level='12'] .level-8,
+view[level='12'] .level-9,
+view[level='12'] .level-10,
+view[level='12'] .level-11,
+view[level='13'] .level-0,
+view[level='13'] .level-1,
+view[level='13'] .level-2,
+view[level='13'] .level-3,
+view[level='13'] .level-4,
+view[level='13'] .level-5,
+view[level='13'] .level-6,
+view[level='13'] .level-7,
+view[level='13'] .level-8,
+view[level='13'] .level-9,
+view[level='13'] .level-10,
+view[level='13'] .level-11,
+view[level='13'] .level-12,
+view[level='14'] .level-0,
+view[level='14'] .level-1,
+view[level='14'] .level-2,
+view[level='14'] .level-3,
+view[level='14'] .level-4,
+view[level='14'] .level-5,
+view[level='14'] .level-6,
+view[level='14'] .level-7,
+view[level='14'] .level-8,
+view[level='14'] .level-9,
+view[level='14'] .level-10,
+view[level='14'] .level-11,
+view[level='14'] .level-12,
+view[level='14'] .level-13,
+view[level='15'] .level-0,
+view[level='15'] .level-1,
+view[level='15'] .level-2,
+view[level='15'] .level-3,
+view[level='15'] .level-4,
+view[level='15'] .level-5,
+view[level='15'] .level-6,
+view[level='15'] .level-7,
+view[level='15'] .level-8,
+view[level='15'] .level-9,
+view[level='15'] .level-10,
+view[level='15'] .level-11,
+view[level='15'] .level-12,
+view[level='15'] .level-13,
+view[level='15'] .level-14 {
+	pointer-events: none;
+	-webkit-transform: scale(1) translateX(100%);
+	-moz-transform: scale(1) translateX(100%);
+	-ms-transform: scale(1) translateX(100%);
+	transform: scale(1) translateX(100%);
+	opacity: 1;
+}
+
+@-webkit-keyframes next-slin {
+	from {
+		-webkit-transform: scale(1)  translateX(100%);
+		-moz-transform: scale(1) translateX(100%);
+		-ms-transform: scale(1) translateX(100%);
+		transform: scale(1) translateX(100%);
+		opacity: 1;
+	}
+	to   {
+		-webkit-transform: scale(1) translateX(0%);
+		-moz-transform: scale(1) translateX(0%);
+		-ms-transform: scale(1) translateX(0%);
+		transform: scale(1) translateX(0%);
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes next-slout {
+	from {
+		-webkit-transform: scale(1) translateX(0%);
+		-moz-transform: scale(1) translateX(0%);
+		-ms-transform: scale(1) translateX(0%);
+		transform: scale(1) translateX(0%);
+		opacity: 1;
+	}
+	to   {
+		-webkit-transform: scale(1) translateX(0%);
+		-moz-transform: scale(1) translateX(0%);
+		-ms-transform: scale(1) translateX(0%);
+		transform: scale(1) translateX(0%);
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes back-slin {
+	from {
+		-webkit-transform: scale(1) translateX(0%);
+		-moz-transform: scale(1) translateX(0%);
+		-ms-transform: scale(1) translateX(0%);
+		transform: scale(1) translateX(0%);
+		opacity: 1;
+	}
+	to   {
+		-webkit-transform: scale(1) translateX(0%);
+		-moz-transform: scale(1) translateX(0%);
+		-ms-transform: scale(1) translateX(0%);
+		transform: scale(1) translateX(0%);
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes back-slout {
+	from {
+		-webkit-transform: scale(1) translateX(0%);
+		-moz-transform: scale(1) translateX(0%);
+		-ms-transform: scale(1) translateX(0%);
+		transform: scale(1) translateX(0%);
+		opacity: 1;
+	}
+	to   {
+		-webkit-transform: scale(1)  translateX(100%);
+		-moz-transform: scale(1) translateX(100%);
+		-ms-transform: scale(1) translateX(100%);
+		transform: scale(1) translateX(100%);
+		opacity: 1;
+	}
+}
+*/
+
+body.show-modal main {
+    filter: blur(0) !important;
+}
+
+modal {
+	background: rgba(255,255,255,0.5) !important;
+}
+
+/*
+@media screen and (max-height: 400px) {
+*/	
+	body.input-focus .hide-min-height, 
+	body.input-focus toolbar {
+		display: none !important;
+	}
+/*
+}
+*/

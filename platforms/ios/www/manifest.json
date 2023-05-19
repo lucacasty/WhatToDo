@@ -1,0 +1,37 @@
+{
+    "short_name": "Gruppo YU",
+    "name": "Gruppo YU",
+    "icons": [
+      {
+        "src": "assets/img/logo.png",
+        "type": "image/png",
+        "sizes": "114x114"
+      },
+      {
+        "src": "assets/img/logo.png",
+        "type": "image/png",
+        "sizes": "144x144"
+      },
+      {
+        "src": "assets/img/logo.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "assets/img/logo.png",
+        "type": "image/png",
+        "sizes": "256x256"
+      },
+      {
+        "src": "assets/img/logo.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/demo/gruppoyu/index.html",
+    "background_color": "#222222",
+    "display": "fullscreen",
+    "orientation": "portrait-primary",
+    "scope": "/demo/gruppoyu/",
+    "theme_color": "#222222"
+  }

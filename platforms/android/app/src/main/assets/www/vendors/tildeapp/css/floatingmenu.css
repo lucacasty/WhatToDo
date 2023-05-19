@@ -1,0 +1,51 @@
+floatingmenu {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 100000;
+    opacity: 0;
+    pointer-events: none;
+    transition-duration: 300ms;
+    background: rgba(0,0,0,0.9);
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+floatingmenu ul {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    list-style-image: none;
+    background: #ffffff;
+	padding-bottom: calc(constant(safe-area-inset-bottom) + 0px);
+    padding-bottom: calc(env(safe-area-inset-bottom) + 0px);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform: translateY(150px);
+    transition-duration: 300ms;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+floatingmenu ul li {
+    display: block;
+    line-height: 44px;
+    text-align: center;
+    border-bottom: 1px solid #eeeeee;
+}
+
+floatingmenu.show {
+    opacity: 1;
+    pointer-events: initial;
+}
+
+floatingmenu.show ul {
+    transform: translateY(0px);
+    opacity: 1;
+    pointer-events: initial;
+}

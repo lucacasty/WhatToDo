@@ -1,0 +1,375 @@
+article {
+	padding: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eee;
+	display: flex;
+	position: relative;
+	overflow: hidden;
+}
+
+article.arrow {
+	padding-right: 40px;
+}
+
+article.arrow::before {
+	content: "";
+	position: absolute;
+	right: 10px;
+	top: 0px;
+	bottom: 0px;
+	width: 10px;
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-size: 14px 14px;
+	background-image: url('../img/icon/basic4-164.png');
+}
+
+article.arrow.date::before {
+	background-size: 10px 10px;
+	bottom: 42px;
+	right: 8px;
+}
+
+article thumbnail div {
+	width: 58px;
+	height: 58px;
+	border-radius: 10px;
+	background-color: #eee;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	/*box-shadow: 0px 3px 10px rgba(0,0,0,0.1);*/
+	margin-right: 15px;
+	border: 0px solid #fff;
+    box-sizing: border-box;
+}
+
+article thumbnail.mini div {
+	width: 30px;
+	height: 30px;
+}
+
+article thumbnail.round div {
+	border-radius: 100%;
+}
+
+article thumbnail.border div {
+	border-width: 2px;
+}
+
+article.pressed {
+	background: #f0f0f0;
+}
+
+article .slide-actions {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+article .slide-actions ul {
+	list-style-image: none;
+    margin: 0px;
+	padding: 0px;
+	height: 100%;
+}
+
+article .slide-actions ul li {
+	display: flex;
+    float: right;
+    width: 0px;
+    transition-duration: 300ms;
+    overflow: hidden;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+}
+
+*:not(.edit-list-mode) article.show-actions .slide-actions ul li {
+	width: 74px;
+}
+
+*:not(.edit-list-mode) article.show-actions .slide-actions.actions-mini ul li {
+	width: 40px;
+}
+
+article .slide-actions ul li img {
+	width: 36px;
+}
+
+article .slide-actions ul li.red {
+	background-color: #e95344;
+}
+
+article .slide-actions ul li.gray {
+	background-color: #f0f0f0;
+	color: #484848;
+}
+
+article .slide-actions ul li.blue {
+	background-color: #1eb9d8;
+}
+
+article .slide-actions ul li.green {
+	background-color: #4caf50;
+}
+
+article .slide-actions ul li.delete {
+	background-color: #e95344;
+	background-image: url('../img/icon/basic4-405-white.png')
+}
+
+article .slide-actions ul li.edit,
+article .slide-actions ul li.settings {
+	background-color: #9e9e9e;
+	background-image: url('../img/icon/basic4-356-white.png');
+}
+
+article .slide-actions ul li.modify {
+	background-color: #4caf50;
+	background-image: url('../img/icon/basic4-356-white.png');
+}
+
+article .slide-actions ul li.geo {
+	background-color: #1eb9d8;
+	background-image: url('../img/icon/basic4-356-white.png');
+}
+
+article .edit-actions {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: -30px;
+    transition-duration: 300ms;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    top: 38px;
+}
+
+article .edit-actions input {
+	pointer-events: none;
+}
+
+article .edit-actions.mini-list {
+	top: 30px;
+}
+
+*.edit-list-mode article .edit-actions {
+	left: 20px;
+}
+
+article thumbnail,
+article thumbmini,
+article description,
+article note,
+article tag,
+article info {
+	position: relative;
+	transition-duration: 300ms;
+}
+
+article thumbmini {
+	position: absolute;
+}
+
+*.edit-list-mode article thumbnail,
+*.edit-list-mode article description,
+*.edit-list-mode article note,
+*.edit-list-mode article tag,
+*.edit-list-mode article info,
+*.edit-list-mode article thumbmini {
+	transform: translateX(40px);
+}
+
+view:not(.edit-list-mode) article.show-actions .edit-actions,
+view:not(.edit-list-mode) article.show-actions thumbnail,
+view:not(.edit-list-mode) article.show-actions description,
+view:not(.edit-list-mode) article.show-actions note,
+view:not(.edit-list-mode) article.show-actions tag,
+view:not(.edit-list-mode) article.show-actions info,
+view:not(.edit-list-mode) article.show-actions thumbmini {
+	transform: translateX(-74px);
+}
+
+view:not(.edit-list-mode) article.show-actions .edit-actions,
+view:not(.edit-list-mode) article.show-actions[actions="0"] thumbnail,
+view:not(.edit-list-mode) article.show-actions[actions="0"] description,
+view:not(.edit-list-mode) article.show-actions[actions="0"] note,
+view:not(.edit-list-mode) article.show-actions[actions="0"] tag,
+view:not(.edit-list-mode) article.show-actions[actions="0"] info,
+view:not(.edit-list-mode) article.show-actions[actions="0"] thumbmini {
+	transform: translateX(0px);
+}
+
+view:not(.edit-list-mode) article.show-actions .edit-actions,
+view:not(.edit-list-mode) article.show-actions[actions="2"] thumbnail,
+view:not(.edit-list-mode) article.show-actions[actions="2"] description,
+view:not(.edit-list-mode) article.show-actions[actions="2"] note,
+view:not(.edit-list-mode) article.show-actions[actions="2"] tag,
+view:not(.edit-list-mode) article.show-actions[actions="2"] info,
+view:not(.edit-list-mode) article.show-actions[actions="2"] thumbmini {
+	transform: translateX(-144px);
+}
+
+view:not(.edit-list-mode) article.show-actions .edit-actions,
+view:not(.edit-list-mode) article.show-actions[actions="3"] thumbnail,
+view:not(.edit-list-mode) article.show-actions[actions="3"] description,
+view:not(.edit-list-mode) article.show-actions[actions="3"] note,
+view:not(.edit-list-mode) article.show-actions[actions="3"] tag,
+view:not(.edit-list-mode) article.show-actions[actions="3"] info,
+view:not(.edit-list-mode) article.show-actions[actions="3"] thumbmini {
+	transform: translateX(-222px);
+}
+
+article info {
+	display: block;
+	position: absolute;
+	right: 20px;
+	top: 26px;
+}
+
+message {
+	font-size: 16px;
+	padding: 15px;
+	border-radius: 10px;
+	background: #f0f0f0;
+	margin-left: 40px;
+	margin-right: 0px;
+	display: block;
+    position: relative;
+    margin-bottom: 15px;
+    border-bottom-left-radius: 0px;
+}
+
+message::after {
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	width: 40px;
+	height: 16px;
+	left: -20px;
+	background: #f0f0f0;
+}
+
+message thumbnail {
+	background-color: #444;
+	width: 32px;
+    height: 32px;
+    display: block;
+    border-radius: 40px;
+    position: absolute;
+    left: -40px;
+    bottom: -4px;
+    z-index: 2;
+    border: 4px solid #fff;
+    box-shadow: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+message.me {
+	background: #c7e6fe;
+	margin-left: 0px;
+	margin-right: 40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 0px;
+	color: #000;
+}
+
+message.me::after {
+	background: #c7e6fe;
+	left: auto;
+	right: -20px;
+}
+
+message.me thumbnail {
+	left: auto;
+	right: -40px;
+}
+
+view headerbar li.edit-list-mode {
+	display: none !important;
+}
+
+*.edit-list-mode headerbar li {
+	display: none !important;
+}
+
+*.edit-list-mode headerbar li.edit-list-mode {
+	display: block !important;
+}
+
+tag {
+	box-sizing: border-box;
+    background: #666666;
+    color: #fff;
+    display: inline-block;
+    border-radius: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+	margin-right: 5px;
+	font-size: 10px;
+	font-weight: bold;
+	line-height: 14px;
+}
+
+body.driver tag.primary {
+	background-color: #1978b6;
+}
+
+tag.mini {
+	font-size: 12px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+tag.blue {
+	background:#1a78b6;
+}
+
+tag.red {
+	background:#e95344;
+}
+
+tag.orange {
+	background:#ff9800;
+}
+
+tag.outline {
+    color: #2d9c63;
+    border: 1px solid #2d9c63;
+	background: transparent;
+}
+
+tag.outline.blue {
+    color: #1a78b6;
+    border: 1px solid #1a78b6;
+	background: transparent;
+}
+
+tag.outline.red {
+    color: #e95344;
+    border: 1px solid #e95344;
+	background: transparent;
+}
+
+tag.outline.orange {
+    color: #ff9800;
+    border: 1px solid #ff9800;
+	background: transparent;
+}

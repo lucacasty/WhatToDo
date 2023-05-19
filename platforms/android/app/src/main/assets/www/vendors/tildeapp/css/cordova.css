@@ -1,0 +1,14 @@
+toolbar {
+    height: calc(constant(safe-area-inset-bottom) + 50px);
+    height: calc(env(safe-area-inset-bottom) + 50px);
+}
+
+#chat #message-area {
+    height: calc(constant(safe-area-inset-bottom) + 29px);
+    height: calc(env(safe-area-inset-bottom) + 29px);
+}
+
+section[content="chat-detail"] #chat-list-messages {
+    bottom: calc(constant(safe-area-inset-bottom) + 50px);
+    bottom: calc(env(safe-area-inset-bottom) + 50px);
+}

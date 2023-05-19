@@ -1,0 +1,45 @@
+map, .map {
+	position: absolute;
+	top: 64px;
+	bottom: 0px;
+	width: 100%;
+	background: #e5e3df;
+	background-size: 22px 22px;
+	background-image: url('../img/interface/loader-black.gif');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.map-popup-element {
+	min-width: 200px;
+}
+
+.gm-style .gm-style-iw {
+	width: 100% !important;
+	left: 0px !important;
+	right: 0px !important;
+}
+
+.map-popup-element {
+	padding-left: 6px !important;
+	padding-right: 6px !important;
+}
+
+.map-popup-title {
+	font-size: 18px;
+}
+
+/*
+.map-popup-element.with-action {
+	padding-right: 22px !important;	
+	background-position: right center;
+	background-size: 32px 32px;
+	background-repeat: no-repeat;
+	background-image: url('../../../framework/img/icon/icon-arrow-black.png');
+}
+*/
+
+/* Android map */
+.android map {
+	bottom: 0px;
+}

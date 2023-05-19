@@ -1,0 +1,14 @@
+.ui-loader,
+.ui-btn-inner {
+	display: none !important;
+}
+
+.ui-page {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	height: auto !important;
+	min-height: auto !important;
+}

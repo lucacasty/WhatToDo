@@ -1,0 +1,159 @@
+toolbar {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	height: 50px;
+	background: rgba(255,255,255,1);
+	/*border-top: 1px solid #b2b2b2;*/
+	opacity: 0;
+	display: none;
+	overflow: hidden;
+	z-index: 100;
+	box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	-ms-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
+
+toolbar.show {
+	opacity: 1;
+}
+
+toolbar ul {
+	list-style-image: none;
+	margin: 0px;
+	padding: 0px;
+	max-width: 580px;
+	margin: 0px auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+toolbar li {
+	display: inline;
+	float: left;
+	height: 49px;
+	position: relative;
+	cursor: pointer;
+}
+
+toolbar li .text {
+	/*Toolbar text default color*/
+	color: #333333;
+	text-transform: uppercase;
+	font-family: 'Lato-Regular', Arial, Helvetica, sans-serif;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	font-size: 10px;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	line-height: 16px;
+}
+
+toolbar li.selected .text {
+	/*Toolbar text over color*/
+	color: #1b7ece;
+}
+
+toolbar .icon {
+	/*Toolbar icon default color*/
+
+	height: 30px;
+	width: 30px;
+	margin: 0px auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4px;
+	text-align: center;
+
+}
+
+toolbar .icon span {
+	font-size: 30px;
+}
+
+toolbar li.selected .icon,
+toolbar li.selected .text {
+	/*color: #ffa800;*/
+	color: #333333;
+}
+
+toolbar #button-toolbar-close {
+	display: none;
+}
+
+/*
+toolbar {
+	height: calc(constant(safe-area-inset-bottom) + 50px);
+    height: calc(env(safe-area-inset-bottom) + 50px);
+}
+*/
+
+#button-toolbar-open {
+	display: none;
+}
+
+/* Android Toobar version*/
+
+.android toolbar {
+	width: 256px;
+	top: 0px;
+	right: auto;
+	bottom: 0px;
+	height: auto;
+	-webkit-transition-duration: 300ms;
+	-webkit-transform: translateX(-257px);
+	border: 0px;
+	border-right: 1px solid #ccc;
+}
+
+.android toolbar.open {
+	-webkit-transform: translateX(0px);
+}
+
+.android toolbar li {
+	width: 256px !important;
+	border-bottom: 1px solid #ddd;
+}
+
+.android toolbar li .text {
+	line-height: 51px;
+	padding: 0px;
+	text-align: left;
+	padding-left: 51px;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.android toolbar .icon {
+	margin: 0px;
+	padding: 0px;
+	height: 51px;
+	width: 51px;
+}
+
+.android .button-toolbar-open {
+	background: url('../img/icon/icon-toolbar-android.png') no-repeat center right;
+	width: 44px;
+	height: 44px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-size: 51px 51px;
+}
+
+.android toolbar #button-toolbar-close {
+	display: block;
+	height: 44px;
+	width: 100%;
+	background: url('../img/icon/icon-toolbar-android.png') no-repeat center right;
+	background-size: 51px 51px;
+	cursor: pointer;
+	border-bottom: 1px solid #ddd;
+}

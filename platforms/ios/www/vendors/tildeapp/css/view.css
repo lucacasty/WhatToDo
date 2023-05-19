@@ -1,0 +1,272 @@
+* {
+	backface-visibility: hidden;
+}
+
+content {
+	position: absolute;
+	overflow: hidden;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	transition-duration: 300ms;
+}
+
+content.background {
+	overflow: hidden;
+	border-radius: 10px;
+	transform-origin: bottom;
+	transform: scale(0.95);
+	opacity: 0.8;
+	pointer-events: none;
+}
+
+view {
+	position: absolute;
+	overflow: hidden;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	/*
+	-webkit-transition-duration: 300ms;
+	-moz-transition-duration: 300ms;
+	-ms-transition-duration: 300ms;
+	transition-duration: 300ms;
+	-webkit-animation-duration:  300ms;
+	-moz-animation-duration:  300ms;
+	-ms-animation-duration:  300ms;
+	animation-duration:  300ms;
+	*/
+	display: none;
+}
+
+view section {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	padding-top: 0px;
+	padding-bottom: 49px;
+	background: #ffffff;
+	overflow: auto;
+	pointer-events: none;
+	/*animation: cubic-bezier(.14,1.25,.98,.81);*/
+	-webkit-overflow-scrolling: touch;
+	-webkit-transform: translate3d(100%,0,0);
+	-ms-transform: translate3d(100%,0,0);
+	-moz-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+	-webkit-transition-duration: 300ms;
+	-moz-transition-duration: 300ms;
+	-ms-transition-duration: 300ms;
+	transition-duration: 300ms;
+}
+/*
+view section input,
+view section select,
+view section textarea {
+	visibility: hidden;
+}
+*/
+/*
+view[level='0'] .level-0,
+view[level='1'] .level-1,
+view[level='2'] .level-2,
+view[level='3'] .level-3,
+view[level='4'] .level-4,
+view[level='5'] .level-5,
+view[level='6'] .level-6,
+view[level='7'] .level-7,
+view[level='8'] .level-8,
+view[level='9'] .level-9,
+view[level='10'] .level-10,
+view[level='11'] .level-11,
+view[level='12'] .level-12,
+view[level='13'] .level-13,
+view[level='14'] .level-14,
+view[level='15'] .level-15,
+view[level='16'] .level-16,
+view[level='17'] .level-17,
+view[level='18'] .level-18,
+view[level='19'] .level-19,
+view[level='20'] .level-20,
+view[level='21'] .level-21,
+view[level='22'] .level-22,
+view[level='23'] .level-23,
+view[level='24'] .level-24,
+view[level='25'] .level-25 {
+	opacity: 1;
+	-webkit-transform: translate3d(0%,0,0) scale(1);
+	-moz-transform: translate3d(0%,0,0) scale(1);
+	-ms-transform: translate3d(0%,0,0) scale(1);
+	transform: translate3d(0%,0,0) scale(1);
+	box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+}
+*/
+
+view section .container {
+	padding: 20px;
+}
+
+view section .container.bottom {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	padding-bottom: 20px;
+}
+
+.android view section {
+	-webkit-animation-duration: 0ms;
+	-moz-animation-duration: 0ms;
+	-ms-animation-duration: 0ms;
+	animation-duration: 0ms;
+}
+
+view section.hide {
+	/*display: none;*/
+}
+
+view section.next-slin {
+	-webkit-animation-name: next-slin;
+	-moz-animation-name: next-slin;
+	-ms-animation-name: next-slin;
+    animation-name: next-slin;
+}
+
+view section.next-slout {
+	-webkit-animation-name: next-slout;
+	-moz-animation-name: next-slout;
+	-ms-animation-name: next-slout;
+    animation-name: next-slout;
+}
+
+view section.back-slin {
+	-webkit-animation-name: back-slin;
+	-moz-animation-name: back-slin;
+	-ms-animation-name: back-slin;
+    animation-name: back-slin;
+}
+
+view section.back-slout {
+	-webkit-animation-name: back-slout;
+	-moz-animation-name: back-slout;
+	-ms-animation-name: back-slout;
+    animation-name: back-slout;
+}
+
+view.with-header section {
+	padding-top: calc(constant(safe-area-inset-top) + 44px);
+    padding-top: calc(env(safe-area-inset-top) + 44px);
+}
+
+view section {
+	padding-bottom: calc(constant(safe-area-inset-bottom) + 50px);
+    padding-bottom: calc(env(safe-area-inset-bottom) + 50px);
+}
+
+view .area-text {
+	padding: 15px;
+}
+
+view .area-list {
+	padding: 0px;
+}
+
+view.show {
+	display: block;
+}
+
+view section {
+	padding-top: 64px;
+}
+
+.android view.with-toolbar section {
+	padding-bottom: 0px;
+}
+
+.android view section {
+	/*Da Android 4.3 non si usa p� specifica touch*/
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+view section.in-left {
+	transform: translate3d(0%,0,0);
+	-webkit-transform: translate3d(0%,0,0);
+	pointer-events: initial;
+}
+/*
+view section.in-left input,
+view section.in-left select,
+view section.in-left textarea {
+	visibility: visible;
+}
+*/
+view section.out-left {
+	transform: translate3d(-5%,0,0);
+	-webkit-transform: translate3d(-5%,0,0);
+	pointer-events: none;
+}
+
+@-webkit-keyframes next-slin {
+	from {
+		-webkit-transform: translateX(100%);
+		-moz-transform: translateX(100%);
+		-ms-transform: translateX(100%);
+		transform: translateX(100%);
+	}
+	to   {
+		-webkit-transform: translateX(0);
+		-moz-transform: translateX(0);
+		-ms-transform: translateX(0);
+		transform: translateX(0);
+	}
+}
+
+@-webkit-keyframes next-slout {
+	from {
+		-webkit-transform: translateX(0);
+		-moz-transform: translateX(0);
+		-ms-transform: translateX(0);
+		transform: translateX(0);
+	}
+	to   {
+		-webkit-transform: translateX(-30%);
+		-moz-transform: translateX(-30%);
+		-ms-transform: translateX(-30%);
+		transform: translateX(-30%);
+	}
+}
+
+@-webkit-keyframes back-slin {
+	from {
+		-webkit-transform: translateX(-30%);
+		-moz-transform: translateX(-30%);
+		-ms-transform: translateX(-30%);
+		transform: translateX(-30%);
+	}
+	to   {
+		-webkit-transform: translateX(0);
+		-moz-transform: translateX(0);
+		-ms-transform: translateX(0);
+		transform: translateX(0);
+	}
+}
+
+@-webkit-keyframes back-slout {
+	from {
+		-webkit-transform: translateX(0);
+		-moz-transform: translateX(0);
+		-ms-transform: translateX(0);
+		transform: translateX(0);
+	}
+	to   {
+		-webkit-transform: translateX(100%);
+		-moz-transform: translateX(100%);
+		-ms-transform: translateX(100%);
+		transform: translateX(100%);
+	}
+}
