@@ -1,0 +1,40 @@
+.delete-icon {
+    position: absolute;
+    right: 0;
+    height: 44px;
+    line-height: 44px;
+}
+
+article.list {
+    height: 44px;
+}
+
+#colorpicker {
+    border: none !important;
+    width: 30%;
+    margin: 0 auto;
+}
+
+#modal .body{
+    background: aliceblue;
+    border: 2px solid black;
+}
+
+thumbnail {
+    height: 44px;
+    width: 44px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+article.list .description {
+    width: calc( 100% - 66px );
+}
+
+article.list .description h2,
+article.list .description div {
+    text-align: left;
+}

@@ -1,7 +1,8 @@
-<div class="p-20 t-a-c">
+<div class="p-20 t-a-c" id="add-note-modal">
     <h2>{{add-note-hint}}</h2>
     <label>{{name}}: </label> <input type="text" id="add-note-name">
     <label>{{descr}}: </label> <input type="text" id="add-note-descr">
-    <button class="full green" action="_notes.saveNote()">{{save}}</button>
+    <label for="colorpicker">{{color}}: </label><input type="color" id="colorpicker">
+    <button id="btnSaveNote" class="full green" action="_notes.saveNote()">{{save}}</button>
     <button class="full red" action="_modal.hide()">{{close}}</button>
 </div>

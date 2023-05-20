@@ -38,8 +38,8 @@ var _init = {
 		_views[viewLabel].headerbar.setTitle(_system.label("page3"), 0);*/
 
 		_toolbar.create("toolbar-home");
-		_toolbar.addButton(_system.label("home"), "filter_1", "_navigator.home.main()", "home");
-		_toolbar.addButton(_system.label("notes"), "filter_2", "_navigator.notes()", "search");
+		_toolbar.addButton(_system.label("home"), "quiz", "_navigator.home.main()", "home");
+		_toolbar.addButton(_system.label("notes"), "description", "_navigator.notes()", "notes");
 		//_toolbar.addButton(_system.label("page3"), "filter_3", "_navigator.page3()", "orders");
 
 		//Init Floating Menu

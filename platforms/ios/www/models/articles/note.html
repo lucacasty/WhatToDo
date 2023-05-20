@@ -1,6 +1,8 @@
-<article class="list p-t-15 p-b-15">
-    <h2>{name}</h2>
-    <h3 style="display:none">{{descr}}</h3>
-    <div>{date}</div>
-    <span class="material-icons arrow">settings</span>
+<article class="list p-t-15 p-b-15" action="_notes.editNote('{id}')">
+    <thumbnail style="background-color:{color}"></thumbnail>
+    <div class="d-block p-r-40 t-ellipsis description">
+        <h2 class="to-search t-ellipsis">{name}</h2>
+        <div class="to-search t-mini t-gray">{date}</div>
+    </div>
+    <span class="material-icons arrow delete-icon" action="_notes.deleteNote('{id}')">delete</span>
 </article>

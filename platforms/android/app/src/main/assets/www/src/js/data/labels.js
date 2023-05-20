@@ -15,6 +15,8 @@ var _labels = {
         "descr": "Descrizione",
         "close": "Chiudi",
         "save": "Salva",
+        "color": "Colore",
+        "delete-note-confirm": "Sicuro di voler eliminare la nota?",
     }, 
 
     "en": {
@@ -32,6 +34,8 @@ var _labels = {
         "descr": "Description",
         "close": "Close",
         "save": "Save",
+        "color": "Color",
+        "delete-note-confirm": "Are you sure you want to delete this note?",
     },   
 
 }
